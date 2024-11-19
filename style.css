@@ -65,3 +65,19 @@ body::-webkit-scrollbar{
         .collapsible-content {
             display: none;
         }
+
+        /* Profile Wrapper */
+.profile-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 350px; /* Atur ukuran lebih besar */
+    height: auto;
+}
+
+/* Gambar Profil */
+.profile-image {
+    width: 100%;
+    height: auto;
+    border: none; /* Tidak ada border */
+    display: block;
+}
