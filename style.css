@@ -1,83 +1,176 @@
-body::-webkit-scrollbar{
-    display: none;
+/* Body: Latar Belakang dan Teks */
+body {
+    background-color: #F4F4F9;
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+    margin: 0;
+    padding: 0;
 }
 
-/* Container for the progress circle */
-        .progress-circle {
-            width: 150px;
-            height: 150px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            color: white;
-        }
+/* Header */
+header {
+    background-color: #1E3D58;
+    color: white !important;
+    text-align: center;
+    padding: 15px 0;
+}
 
-        /* The background circle */
-        .progress-circle::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            border: 10px solid #ddd;
-        }
+header nav a {
+    color: white !important;
+    text-decoration: none;
+    margin: 0 15px;
+}
 
-        /* The foreground animated circle */
-        .progress-circle .progress-inner {
-            width: 100%;
-            height: 100%;
-            border-radius: 80%;
-            border: 10px solid #6a0dad;
-            border-top-color: transparent;
-            border-right-color: transparent;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
+header nav a:hover {
+    text-decoration: underline;
+}
 
-        /* Text in the center of the circle */
-        .progress-circle .progress-text {
-            position: relative;
-            z-index: 1;
-        }
+/* Footer */
+footer {
+    background-color: #ffffff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000000 !important;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #F5A623;
+}
+
+/* Tombol */
+button {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* Tabel Kategori BMI */
+.bmi-category-table tr.obesity {
+    background-color: #FF6961; 
+    color: white;
+}
+
+.bmi-category-table tr.normal {
+    background-color: #77DD77;
+    color: white;
+}
+
+.bmi-category-table tr.underweight {
+    background-color: #FFEB99; 
+    color: #333333;
+}
+
+.bmi-category-table tr.overweight {
+    background-color: #FFB347;
+    color: #333333;
+}
+
+/* Form Input */
+form input, form textarea {
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+/* Progress Bar */
+#skills .progress {
+    height: 20px;
+    background-color: #E5E5E5;
+}
+
+#skills label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: #4A90E2;
+}
+
+.progress-bar.bg-success {
+    background-color: #77DD77;
+}
+
+.progress-bar.bg-info {
+    background-color: #4A90E2;
+}
+
+.progress-bar.bg-warning {
+    background-color: #FFB347;
+}
+
+.progress-bar.bg-primary {
+    background-color: #1E3D58;
+}
+
+/* Card Project */
+.card {
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Sesuaikan tinggi gambar */
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    color: #1E3D58;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555555;
+    margin-bottom: 15px;
+}
 
 
-        .bmi-category-table .obesity {
-            background-color: #ff6961;
-        }
-
-        .bmi-category-table .normal {
-            background-color: #77dd77;
-        }
-
-        .bmi-category-table .underweight {
-            background-color: #fdfd96;
-        }
-
-        .bmi-category-table .overweight {
-            background-color: #ffb347;
-        }
-
-        .collapsible-content {
-            display: none;
-        }
-
-        /* Profile Wrapper */
+/* Profile Wrapper */
 .profile-wrapper {
     position: relative;
     display: inline-block;
-    width: 350px; /* Atur ukuran lebih besar */
-    height: auto;
+    width: 350px;
 }
 
-/* Gambar Profil */
 .profile-image {
     width: 100%;
     height: auto;
-    border: none; /* Tidak ada border */
+    border-radius: 50%;
     display: block;
 }
